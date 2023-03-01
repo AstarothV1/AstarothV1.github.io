@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from sensibilidades_app.views import Sensibilidades
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('sensibilidades_app/', Sensibilidades.as_view(), name = "index"),
 ]
